@@ -36,6 +36,8 @@ The website allows users to browse a variety of fresh produce (meats, vegetables
 2. Open the project folder
 3. Open index.html in any modern web browser to view the site, or use an extension like VS Code Live Server for a better development experience.
 
+_You can also directly click the website link under repository about section for live view._
+
 ## 👨‍💻 Author
 * **Ting Rong You** 
 * **Shawn Tan Yu Hang**
