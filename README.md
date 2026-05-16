@@ -37,6 +37,7 @@ The website allows users to browse a variety of fresh produce (meats, vegetables
 3. Open index.html in any modern web browser to view the site, or use an extension like VS Code Live Server for a better development experience.
 
 ## 👨‍💻 Author
-**Ting Rong You** 
-**Shawn Tan Yu Hang**
+* **Ting Rong You** 
+* **Shawn Tan Yu Hang**
+
 _Tunku Abdul Rahman University of Management and Technology (TARUMT) Foundation Web Development Assignment_

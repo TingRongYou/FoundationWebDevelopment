@@ -140,7 +140,7 @@ div#lH:hover {
   background-color: #fff;
   border: 6px solid #ddd;
   /* Border image with red and white stripes images is added to increase the Cristmas vibe, ensure customer to enjoy the event */
-  border-image: url('/images/christmasbackground.jpg') 50 round;
+  border-image: url('../images/christmasbackground.jpg') 50 round;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 
 }
@@ -226,7 +226,7 @@ div#lH:hover {
 
   background-color: #fff;
   /* The cursor image will change into a candy canes when hover as a easter egg for the christmas event */
-  cursor: url('/images/candycanes.png'), auto;
+  cursor: url('../images/candycanes.png'), auto;
 
 }
 

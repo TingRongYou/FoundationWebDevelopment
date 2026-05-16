@@ -7,7 +7,7 @@
     width: 100%;
     margin-top: 20px;
 
-    background-image: url('/images/lightbrown.png');
+    background-image: url('../images/lightbrown.png');
     color: #fefefe;
     text-align: center;
     align-items: center;
@@ -152,7 +152,7 @@
     color: #fefefe;
     font-size: small;
 
-    background-image: url('/images/darkbrown.jpg');
+    background-image: url('../images/darkbrown.jpg');
     text-align: center;
     
 }

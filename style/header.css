@@ -10,7 +10,7 @@
     
     align-items: center;
     /* background-color: #C9DD94; */
-    background-image: url('/images/darkbrown.jpg');
+    background-image: url('../images/darkbrown.jpg');
 
 }
 
@@ -108,7 +108,7 @@ nav a:hover::before {
     align-items: center;
     /* background-color: #acbb85; */
     white-space: nowrap;
-    background-image: url('/images/lightbrown.png');
+    background-image: url('../images/lightbrown.png');
 
 }
 
