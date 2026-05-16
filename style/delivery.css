@@ -1,0 +1,319 @@
+/* Upper banner */
+.upper-container {
+
+    display: flex;
+    position: relative;
+
+    margin-top: 30px;
+    margin-bottom: 80px;
+
+    justify-content: center;
+    
+
+}
+
+.upper-container img {
+
+    width: 1000px;
+    filter: blur(4px);
+
+}
+
+.advertise-blur {
+
+    width: 1000px;
+    height: 625px;
+    background-color: rgba(56, 53, 53, 0.212);
+    position: absolute;
+    z-index: 500;  
+
+}
+
+.freshies {
+
+    margin-top: 140px;
+    margin-left: 80px;
+    color: white;
+    font-size: 120px;
+    font-family: 'Leyton', sans-serif;
+    
+}
+
+.delivery {
+
+    margin-left: 500px;
+    color: white;
+    font-size: 110px;
+    font-family: 'Leyton', sans-serif;  
+
+}
+
+/* Line for separating */
+.separate-line {
+
+    width: 700px;
+    border: 1px solid rgb(175, 175, 175);
+
+}
+
+/* Middle section in the pages */
+.middle-heading {
+
+    margin: 30px 0 50px 0;        
+
+    text-align: center;
+    font-family: 'Ace Sans', sans-serif;
+    font-size: 40px;    
+
+}
+
+.middle-section {
+
+    display: flex;
+
+    width: 1000px;
+    height: 770px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.delivery-promise {
+
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Grey layer on midleft-img-1 */
+.midleft-img-1-blur {
+
+    display: flex;
+    position: absolute;
+    z-index: 200;
+
+    width: 434px;
+    height: 770px;
+    border-radius: 4px;
+    opacity: 0;
+
+    color: white;
+    font-family: 'Comme', sans-serif;
+    font-family: 'Inconsolata', monospace;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(160, 160, 160, 0.493);
+
+    transition: opacity 0.5s;
+
+}
+
+/* Only appear when hover */
+.midleft-img-1-blur:hover {
+
+    opacity: 1;
+
+}
+
+.midleft-img-1 {
+
+    position: relative;
+
+    width: 434px;
+    height: 770px;
+    object-fit: contain;
+    border-radius: 4px;
+    filter: drop-shadow(1px 5px 5px rgba(65, 65, 65, 0.479));
+    
+}
+
+/* Whole middle right section */
+.middle-right {
+
+    width: 600px;
+    
+}
+
+/* Middle right upper section */
+.middle-right-up {
+
+    height: 390px;
+
+    justify-content: flex-end;
+
+}
+
+/* Separate line between middle right upper and lower */
+.middle-line {
+
+    width: 500px;
+    margin-right: 10px;
+    border: 1px solid rgb(175, 175, 175);
+
+}
+
+/* Middle right lower section */
+.middle-right-down {
+
+    height: 350px;
+    clear: both;
+    margin-left: 50px;
+    margin-top: 55px;
+
+}
+
+.midright-img-2-blur {
+
+    display: flex;
+    position: absolute;
+    z-index: 200;
+
+    width: 400px;
+    height: 350px;
+    border-radius: 4px;
+    background-color: rgba(160, 160, 160, 0.493);
+    margin-left: 165px;
+    opacity: 0;
+
+    color: white;
+    font-family: 'Comme', sans-serif;
+    font-family: 'Inconsolata', monospace;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+
+    transition: opacity 0.5s;
+
+}
+
+.midright-img-2-blur:hover {
+
+    opacity: 1;
+
+}
+
+.midright-img-2 {
+
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+    float: right;
+    border-radius: 4px;
+    filter: drop-shadow(1px 5px 5px rgba(65, 65, 65, 0.479));
+
+}
+
+.midright-img-3-blur {
+
+    display: flex;
+    position: absolute;
+    z-index: 200;
+
+    width: 500px;
+    height: 300px;
+    border-radius: 4px;
+    background-color: rgba(160, 160, 160, 0.493);
+    opacity: 0;
+
+    color: white;
+    font-family: 'Comme', sans-serif;
+    font-family: 'Inconsolata', monospace;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+
+    transition: opacity 0.5s;
+
+}
+
+.midright-img-3-blur:hover {
+
+    opacity: 1;
+
+}
+
+
+.midright-img-3 {
+
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    clear: both;
+    border-radius: 4px; 
+    filter: drop-shadow(1px 5px 5px rgba(65, 65, 65, 0.479));
+
+}
+
+/* Lower section of the page */
+.lower-section {
+
+    margin-top: 80px;
+
+}
+
+/* Delivery information */
+.info-container {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+.delivery-img {
+
+    width: 400px;
+
+}
+
+.info-header {
+
+    text-align: center;
+
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+
+}
+
+.info-description {
+
+    max-width: 590px;
+
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+
+}
+
+.info-text {
+
+    flex: 1;
+
+}
+
+.img-container {
+
+    display: flex;
+    flex: 1;
+
+    justify-content: center;
+
+}
+
+.info-description-2 {
+
+    max-width: 600px;
+    margin-left: 50px;
+
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+
+}
+
+.delivery-img-2 {
+
+    width: 400px;
+
+}

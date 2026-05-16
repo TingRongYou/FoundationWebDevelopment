@@ -1,0 +1,209 @@
+/* Upper section in the page */
+.upper-section {
+
+    display: flex;
+
+    margin-top: 30px;
+    height: 600px;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.words-for-customer {
+
+    width: 500px;
+
+}
+
+.contact-us {
+
+    position: absolute;
+    top: 310px;
+
+    height: 100px;    
+    border-radius: 2px;
+    margin-left: 80px;
+
+    font-family: 'Digitalt', sans-serif;
+    font-size: 70px;  
+
+}
+
+.contact-background-color {
+
+    height: 100px;
+
+    background-color: #FFFAED;
+
+}
+
+.contact-promise {
+
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+    font-size: 22px;
+    font-family: 'Cronus', sans-serif;
+    font-family: 'Cronus Round', sans-serif;
+
+                                                
+}
+
+/* Middle section in the page */
+.middle-section {
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+
+    margin-top: 50px;
+    width: 1000px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.middle-section img {
+
+    width: 80px;
+
+}
+
+/* Contact cards containing type and way to contact */
+.contact-card {
+
+    display: grid;
+    
+    box-shadow: 2px 3px 8px rgba(59, 59, 59, 0.527);
+    border-radius: 30px;
+
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+.contact-type {
+
+    margin-top: 5px;
+
+    font-family: 'Lato Light', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.phone-number {
+
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    font-family: 'JetBrains Mono', sans-serif;                                           
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.or {
+
+    margin-bottom: 0;
+
+
+}
+
+/* Email address, opacity change when hover and clicked */
+.email {
+
+    font-size: 15px;
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+.email:hover {
+
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    opacity: 0.75;
+
+}
+
+.email:active {
+
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    opacity: 0.5;
+
+}
+
+/* Table styling (White and grey row alternating) */
+.table-about {
+
+    margin-top: 30px;          
+    margin-left: 25px; 
+
+    font-family: 'Ace Sans', sans-serif;
+    font-size: 60px;                               
+
+}
+
+table {
+
+    border-collapse: collapse;
+
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: arial, sans-serif;
+    font-size: 16px;
+
+  }
+  
+td, th {
+
+    padding: 8px;
+    border: 1px solid #dddddd;
+
+    text-align: left;
+    
+}
+  
+tr:nth-child(even) {
+
+    background-color: #dddddd;
+
+}
+
+/* Table email address, opacity change when hover and clicked */
+table a {
+
+    color: black;
+    text-decoration: underline;
+
+}
+
+table a:hover {
+
+    color: black;
+    text-decoration: underline;
+    opacity: 0.75;
+
+}
+
+table a:active {
+
+    color: black;
+    text-decoration: underline;
+    opacity: 0.5;
+
+}

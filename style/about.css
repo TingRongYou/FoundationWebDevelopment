@@ -1,0 +1,99 @@
+/* Upper banner */
+.top-container {
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.top-img {
+
+    width: 800px;
+    margin-top: 30px;
+
+}
+
+/* Slogan */
+.caption {
+
+    display: block;
+
+    margin-bottom: 30px;
+
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 600;
+
+}
+
+/* About us description */
+.info-container {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+.about-img {
+
+    width: 300px;
+
+}
+
+.info-header {
+
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    font-weight: 400;
+
+}
+
+.info-description {
+
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    max-width: 600px;
+
+}
+
+.info-text {
+
+    flex: 1;
+
+}
+
+.img-container {
+
+    display: flex;
+    flex: 1;
+
+    justify-content: center;
+
+}
+
+
+.info-description-2 {
+
+    max-width: 600px;
+    margin-left: 50px;
+
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+
+}
+
+.about-img-2 {
+
+    width: 400px;
+
+}
+
+/* Line for separating */
+.separate-line {
+
+    width: 700px;
+    border: 1px solid rgb(175, 175, 175);
+
+}

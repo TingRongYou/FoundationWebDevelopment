@@ -1,0 +1,392 @@
+/* Main */
+.main-content {
+
+  max-width: 1000px;
+  margin: 30px auto 90px auto;
+  padding: 0 25px;
+
+  text-align: center;
+  
+}
+
+/* Intro */
+.first-heading {
+
+  display: flex;
+
+  font-size: 48px;
+  font-weight: 600;
+  font-family: 'Monarda', sans-serif;
+  opacity: 0.94;
+
+  justify-content: center;
+  align-items: center;
+
+}
+
+.text {
+
+  margin-top: 11px;
+  line-height: 1.1;
+
+  font-size: 40px;
+  font-family: 'Georgia', sans-serif;
+  opacity: 0.9;
+  font-weight: 300;
+
+}
+  
+.text--second {
+
+  display: block;
+
+}
+
+/* UTILITIES */
+.u-bold {
+
+  font-weight: bold;
+
+}
+
+.u-bolder {
+
+  font-weight: 700;
+
+}
+
+.u-yellow {
+
+  color: #FFD600;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+}
+
+/*carousel*/
+.mycarousel{
+
+  display: block;
+  
+  margin: 0 auto 0 auto;
+
+  animation: fade-up 0.5s;
+
+}
+ 
+#myCarousel .item img {
+
+  object-fit: cover;
+  object-position: center;
+  max-height: 50vh;
+  overflow: hidden;
+
+}
+  
+/* KEYFRAMES */
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(30px) translateY(-50%) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px) translateY(-50%) scale(1);
+  }
+}
+
+/* Line for separating */
+.separate-line {
+
+  width: 700px;
+  border: 1px solid rgb(175, 175, 175);
+  margin: 180px auto;
+
+}
+
+/* Our special products */
+/* Video */
+.durian-video {
+
+  width: 950px;
+  height: 500px;
+  margin-top: 0;
+
+}
+
+/* Special product desciption container */
+.special-introduction {
+
+  width: 870px;
+  margin: 50px auto 0 auto;
+  line-height: 400%;
+
+}
+
+/* Special product description font */
+.special-introduction p{
+
+  font-size: 22px;
+  font-family: 'Caudex', sans-serif;
+
+}
+
+/* Seperator */
+.separator {
+
+  display: flex;
+  position: relative;
+
+  width:100%;
+  height:300px;
+  margin: 20px 0;
+
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  animation-delay: 0.6s;
+
+}
+  
+.separator-content {
+
+  position: relative;
+
+}
+
+.separator p {
+  
+  color: white ;
+  font-size: 12em
+  
+}
+  
+.separator img {
+
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+
+  transition: transform 0.5s
+
+}
+
+.separator-text {
+
+  position: absolute;
+
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+
+}
+
+.separator:hover .separator-text {
+
+  opacity: 1;
+  transform: translateY(0);
+
+}
+
+/* Shop now button within separator */
+.shop-now-button {
+
+  position: absolute;
+  top: 90%;
+  right: 10px; /* Adjust the distance from the right as needed */
+
+  background-color: gold;
+  padding: 8px 16px;
+
+  color: black;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+
+  transform: translateY(-50%);
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+
+}
+  
+/* Shop now button animation */
+.shop-now-button:hover {
+
+  background-color: white;
+
+  color: black;
+
+  transform: translateY(-60%); /* Adjust the upward movement on hover */
+
+}
+
+  
+/* Column Section (Used to describe advantages of Freshies) */
+.column-section {
+
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 10px; /* Adjust the margin as needed */
+
+  justify-content: space-around;
+
+}
+  
+/* Column */
+.column {
+
+  position: relative;
+  overflow: hidden;
+
+  width: 30%; /* Adjust the width as needed */
+  margin-bottom: 20px; /* Adjust the margin as needed */
+  border: 1px solid rgb(173, 173, 173);
+  box-shadow: 3px 6px 6px rgba(133, 133, 133, 0.507);
+
+  }
+  
+/* Column Image */
+.column-img {
+
+  width: 100%;
+  height: 150px;
+
+  transition: filter 0.3s ease-in-out;
+
+}
+  
+/* Column overlay text */
+.column-overlay {
+
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  transition: opacity 0.5s ease-in-out;
+
+}
+  
+.overlay-text {
+
+  color: #fff;
+  font-size: 18px; /* Adjust the font size */
+
+}
+  
+/* Column Hover effect */
+.column:hover .column-img {
+
+  filter: blur(2px); /* Adjust the blur effect as needed */
+
+}
+  
+.column:hover .column-overlay {
+
+  opacity: 1;
+
+}
+  
+/*Customer review*/
+.customer-reviews-container {
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Adjust the gap between reviews */
+
+  margin-top: 20px;
+
+}
+
+.customer-review {
+
+  display: flex;
+
+  padding: 20px;
+
+  background-color: #000;
+  color: #fff;
+
+}
+.customer-avatar {
+
+  margin-right: 20px;
+
+}
+
+.customer-avatar img {
+
+  width: 60px;
+  height: 55px;
+  border-radius: 50%;
+
+}
+
+.review-content {
+
+  flex-grow: 1;
+
+}
+
+.customer-name {
+
+  margin-bottom: 5px;
+
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+
+.customer-rating {
+
+  margin-bottom: 10px;
+
+  font-size: 20px;
+  
+}
+
+.customer-comment {
+
+  font-size: 16px;
+  line-height: 1.5;
+
+}

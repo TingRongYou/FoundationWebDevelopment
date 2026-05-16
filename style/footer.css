@@ -1,0 +1,231 @@
+/* footer */
+.footer-container {
+
+    display: flex;
+    flex-wrap: wrap;
+  
+    width: 100%;
+    margin-top: 20px;
+
+    background-image: url('/images/lightbrown.png');
+    color: #fefefe;
+    text-align: center;
+    align-items: center;
+
+}
+
+.footer-hotspot {
+
+    flex: 1;
+
+}
+
+.footer-hotspot img {
+
+    width: 180px;
+    margin: 10px 0 0 10px;
+    
+}
+
+.introduction {
+
+    flex: 1;
+
+}
+
+.hyperlinks {
+
+    flex: 1;
+    color: #fefefe;
+
+}
+
+.hyperlinks h3 {
+
+    font-weight: bold;
+    font-family: 'Ace Sans', sans-serif;
+
+}
+
+.hyperlinks ul {
+
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.hyperlinks a {
+
+    color: #fefefe;
+    opacity: 0.75;
+    text-decoration: none;
+    transition: opacity 0.3s;
+
+}
+
+.hyperlinks a:hover {
+
+    opacity: 1;
+    color: white;
+    text-decoration: none;
+
+}
+
+.hyperlinks a:active {
+
+    opacity: 0.75   ;
+    color: white;
+    text-decoration: none;
+
+}
+
+.follow-us {
+
+    flex: 1;
+
+}
+
+.follow-us h3 {
+
+    font-weight: bold;
+    font-family: 'Ace Sans', sans-serif;
+
+}
+
+.follow-us img {
+
+    width: 30px;
+    filter: brightness(0) invert(1);
+    gap: 12px;
+    transition: transform 0.3s;
+
+}
+
+.follow-us img:hover {
+
+    transform: scale(1.1);
+    filter: brightness(0) invert(1);
+
+}
+
+.follow-us ul {
+
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+
+}
+
+.follow-us li {
+
+    display: inline;
+    
+}
+
+.introduce-name {
+
+    font-family: 'Ace Sans', sans-serif;
+    font-weight: bold;
+
+}
+
+.brief-description {
+
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.description-container {
+
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+/* Footer copyright */
+.copyright {
+  
+    color: #fefefe;
+    font-size: small;
+
+    background-image: url('/images/darkbrown.jpg');
+    text-align: center;
+    
+}
+  
+.copyright a {
+  
+    color: #fefefe;
+    opacity: 1;
+    transition: opacity 0.2s;
+  
+}
+  
+.copyright a:hover {
+  
+    color: #fefefe;
+    text-decoration: underline;
+    opacity: 0.9;
+  
+}
+  
+.copyright a:active {
+  
+    color: #fefefab4;
+    text-decoration: underline;
+    opacity: 1;
+  
+}
+
+/* Footer shop now button (Only in delivery page) */
+.footer-shop-now {
+
+  margin: 20px 0 -20px 0;
+
+  text-align: center;
+  font-size: 16px;
+
+  transition: opacity 0.5s;
+
+}
+
+.footer-shop-now img {
+
+  height: 39px;
+  width: 100%;
+  margin: 20px 0 -30px 0;
+
+  white-space: nowrap;
+  background-color: #acbb85;
+
+}
+
+.footer-shop-now a {
+
+  color: #fefefecb;
+  opacity: 0.9;  
+
+}
+
+.footer-shop-now a:hover {
+
+  color: #fefefe;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  opacity: 1;
+
+}
+
+.footer-shop-now a:active {
+
+  color: #fefefe5b;
+  font-weight: bold;
+  font-size: 18px;
+  opacity: 0.75;
+
+}

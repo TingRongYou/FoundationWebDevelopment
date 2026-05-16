@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Freshies Products</title>
+
+    <!-- Link towards css -->
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/product.css">
+    <link rel="stylesheet" href="style/footer.css">
+
+    <!-- Link towards javascript -->
+    <script src="script/product.js"></script>
+    <script src="script/script.js"></script>
+
+    <!-- Link towards font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.cdnfonts.com/css/monarda" rel="stylesheet">
+                    
+    <link href="https://fonts.cdnfonts.com/css/rooneysans" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/georgia" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/baskerville" rel="stylesheet">
+    
+    <link href="https://fonts.cdnfonts.com/css/kg-the-last-time" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+                
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">                        
+                
+    <link href="https://fonts.cdnfonts.com/css/digitalt" rel="stylesheet">
+                                                        
+    <link href="https://fonts.cdnfonts.com/css/cronus" rel="stylesheet">
+                
+    <link href="https://fonts.cdnfonts.com/css/lato-light" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/jetbrains-mono" rel="stylesheet">
+                
+    <link href="https://fonts.cdnfonts.com/css/ace-sans" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/encode-sans-2" rel="stylesheet">
+                
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">                        
+
+</head>
+
+<!-- Body with background color #fdfff5 -->
+<body style="background-color: #fdfff5;">
+    <!-- Wrapper (To limit the size of the page) -->
+    <div id="wrapper">
+        <!-- Header -->
+        <div class="banner-container">
+
+            <header>
+
+                <div> 
+                    <a href="index.html"><img class="header-hotspot" style="margin-top: 13px;" src="images/freshies-hotspot.png" alt="Freshies Logo"></a>
+                </div> 
+
+            </header>
+
+            <!-- Navigation link (Home, Product, Delivery, About us and Contact us) -->
+            <nav>
+                <div class="navigation-link-container">
+                    <div> <a href="index.html">Home</a>         </div>
+                    <div> <a href="product.html" class="active-page">Product</a></div>
+                    <div> <a href="delivery.html">Delivery</a>  </div>
+                    <div> <a href="about.html">About us</a>     </div>
+                    <div> <a href="contact.html">Contact us</a> </div>
+                </div>
+            </nav>
+
+        </div>
+    
+        <!-- Subbanner -->
+        <div class="sub-banner-container">
+    
+                    <div class="left-section" style="margin-bottom: 11px;">
+                        <ul>
+                            <li><a href="#">Wish List</a></li>
+                            <li><a href="#">Shopping Cart</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="right-section" style="margin-bottom: 5px;">
+                        <ul>
+                            <li><a href="#"><img class="notification-icon" style="margin-right: 3px;" src="icons/notification.png" alt="Notification"></a></li>
+                            <li><img style="margin-bottom: 1px; margin-right: 2px;" class="search-icon" src="icons/search.png" alt="Search"></li>
+                            <li><a href="#"><img style="margin-right: 3px;" src="icons/account.png" alt="Profile"></a></li>
+                        </ul>
+                    </div>
+        </div>
+
+        <!-- Main -->
+        <main>
+
+              <!-- Pages banner, Christmas sale announcement -->
+              <div class="christmas-container" style="background-image: url(images/christmassale.png);">
+                <div class="christmas-words">
+                    <div class="christmas-text">
+                      <p>Christmas Sale</p>
+                    </div>
+                </div>    
+              </div>
+
+              <!-- Christmas music, controllable and will continue looping until clicked for a second time -->
+              <div id="lH">
+                <audio controls id="aH" loop>
+                  <source src="audio/chirstmas-song.mp3" type="audio/mp3">
+              </audio>
+              <!-- A music note image is used as the play pause button -->
+              <img class="music" style="width: 40px;" src="icons/music-play.png" alt="Music">
+              </div>
+              
+              <!-- Hottest sellers section -->
+              <p class="textproduct">Hottest Sellers</p> 
+              <!-- Products card(4 in a row) -->
+              <div class="grid-container">
+                <div class="containergrid">
+                  <!-- Discount(Christmas Event) -->
+                  <div class="discount-percentagefirst">-10%</div>
+                  <!-- Information for product(Image, name, price per weight before and after) -->
+                  <div class="product-card">
+                    <img src="images/musangking.png" alt="Musang King Durian" class="product-image">
+                    <div class="product-title">Musang King Durian</div>
+                    <div class="perweight">1 kg</div>
+                      <div class="price-before" data-unit-price="53.00">
+                        RM53.00
+                      </div>
+                    <div class="price-after" data-unit-price="47.70">
+                      RM47.70
+                    </div>
+
+                    <!-- Buttons(Increase or decrease quantity and add to cart) -->
+                    <div class="quantity-controls">
+                    <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                    <span class="quantity">1</span>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                    <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                  </div>
+                </div>
+                  
+                <div class="containergrid">
+                  <div class="discount-percentagefirst">-15%</div>
+                  <div class="product-card">
+                    <img style="width: 130px;" src="images/d24.png" alt="D24 Durian" class="product-image">
+                    <div class="product-title">D24 Durian</div>
+                    <div class="perweight">1 kg</div>
+                      <div class="price-before" data-unit-price="26.00">
+                        RM26.00
+                      </div>
+                    <div class="price-after" data-unit-price="22.10">
+                      RM22.10
+                    </div>
+                    
+                    <div class="quantity-controls">
+                    <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                    <span class="quantity">1</span>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                    <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                  </div>
+                </div>
+
+                <div class="containergrid">
+                  <div class="discount-percentagefirst">-10%</div>
+                  <div class="product-card">
+                    <img style="width: 130px;" src="images/blackthorn.png" alt="Black Thorn Durian" class="product-image">
+                    <div class="product-title">Black Thorn Durian</div>
+                    <div class="perweight">1 kg</div>
+                      <div class="price-before" data-unit-price="70.00">
+                        RM70.00
+                      </div>
+                    <div class="price-after" data-unit-price="63.00">
+                      RM63.00
+                    </div>
+
+                      <div class="quantity-controls">
+                      <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                      <span class="quantity">1</span>
+                      <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                      </div>
+                      <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                  </div>
+                </div>
+
+                <div class="containergrid">
+                  <div class="discount-percentagefirst">-5%</div>
+                  <div class="product-card">
+                    <img src="images/redprawn.png" alt="Red Prawn Durian" class="product-image">
+                    <div class="product-title">Red Prawn</div>
+                    <div class="perweight">1 kg</div>
+                    
+                      <div class="price-before" data-unit-price="28.00">
+                        RM28.00
+                      </div>
+                    <div class="price-after" data-unit-price="26.60">
+                      RM26.60
+                    </div>
+
+                      <div class="quantity-controls">
+                      <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                      <span class="quantity">1</span>
+                      <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                      </div>
+                      <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="separators2">
+                <div class="separators-item2">
+                  <img src="images/strawberrycontainer.jpg" alt="Strawberry">
+                </div>
+                <div class="separators-item2">
+                  <img src="images/strawberrybasket.jpg" alt="Strawberry">
+                </div>
+              </div>
+                  
+              <!-- Fruits Section -->
+              <p class="textproduct">Fruits</p> 
+              <div class="grid-container">
+                <div class="containergrid">
+                  <div class="discount-percentagefirst">-10%</div>
+                  <div class="product-card">
+                    <img src="images/dragonfruit.png" alt="Dragon Fruit" class="product-image">
+                    <div class="product-title">
+                      Dragon Fruit
+                    </div>
+                    <div class="perweight">1 kg</div>
+                      <div class="price-before" data-unit-price="8.00">
+                        RM8.00
+                      </div>
+                    <div class="price-after" data-unit-price="7.20">
+                      RM7.20
+                    </div>
+
+                      <div class="quantity-controls">
+                      <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                      <span class="quantity">1</span>
+                      <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                      </div>
+                      <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                  </div>
+              </div>
+                
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-5%</div>
+                <div class="product-card">
+                  <img src="images/bananas.png" alt="Banana" class="product-image">
+                  <div class="product-title">Banana</div>
+                  <div class="perweight">1 bundle</div>
+                    <div class="price-before" data-unit-price="7.00">
+                      RM7.00
+                    </div>
+                  <div class="price-after" data-unit-price="6.65">
+                    RM6.65
+                  </div>
+                  
+                    <div class="quantity-controls">
+                    <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                    <span class="quantity">1</span>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                    <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="containergrid">
+                  <div class="discount-percentagefirst">-10%</div>
+                  <div class="product-card">
+                      <img src="images/orange.png" alt="Orange" class="product-image">
+                      <div class="product-title">Orange</div>
+                      <div class="perweight">1 kg</div>
+                        <div class="price-before" data-unit-price="3.00">
+                          RM3.00
+                        </div>
+                      <div class="price-after" data-unit-price="2.70">
+                        RM2.70
+                      </div>
+
+                      <div class="quantity-controls">
+                      <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                      <span class="quantity">1</span>
+                      <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                      </div>
+                      <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                    </div>
+              </div>
+              
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-20%</div>
+                <div class="product-card">
+                  <img src="images/strawberries.png" alt="Strawberry" class="product-image">
+                  <div class="product-title">Strawberry</div>
+                  <div class="perweight">250 g</div>
+                    <div class="price-before" data-unit-price="14.90">
+                      RM14.90
+                    </div>
+                  <div class="price-after" data-unit-price="11.90">
+                    RM11.90
+                  </div>
+
+                    <div class="quantity-controls">
+                    <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                    <span class="quantity">1</span>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                    <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-5%</div>
+                <div class="product-card">
+                  <img src="images/kiwi.png" alt="Kiwi" class="product-image">
+                  <div class="product-title">Kiwi</div>
+                  <div class="perweight">1 pcs</div>
+                    <div class="price-before" data-unit-price="4.25">
+                      RM4.25
+                    </div>
+                  <div class="price-after" data-unit-price="4.03">
+                    RM4.03
+                  </div>
+
+                    <div class="quantity-controls">
+                    <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                    <span class="quantity">1</span>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                    <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-10%</div>
+                <div class="product-card">
+                  <img src="images/grape.png" alt="Grape" class="product-image">
+                  <div class="product-title">Grapes</div>
+                  <div class="perweight">1 kg</div>
+                    <div class="price-before" data-unit-price="15.00">
+                      RM15.00
+                    </div>
+                  <div class="price-after" data-unit-price="13.50">
+                    RM13.50
+                  </div>
+
+                    <div class="quantity-controls">
+                    <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                    <span class="quantity">1</span>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                    <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+            </div>
+
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-15%</div>
+                <div class="product-card">
+                  <img src="images/avocado.png" alt="Avocado" class="product-image">
+                  <div class="product-title">Avocado</div>
+                  <div class="perweight">1 pcs</div>
+                    <div class="price-before" data-unit-price="4.00">
+                      RM4.00
+                    </div>
+                  <div class="price-after" data-unit-price="3.40">
+                    RM3.40
+                  </div>
+
+                  <div class="quantity-controls">
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                  <span class="quantity">1</span>
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                  </div>
+                  <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-10%</div>
+                <div class="product-card">
+                  <img src="images/watermelon.jpeg" alt="Watermelon" class="product-image">
+                  <div class="product-title">Watermelon</div>
+                  <div class="perweight">1 pcs</div>
+                    <div class="price-before" data-unit-price="18.00">
+                      RM18.00
+                    </div>
+                  <div class="price-after" data-unit-price="16.20">
+                    RM16.20
+                  </div>
+                  
+                  <div class="quantity-controls">
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                  <span class="quantity">1</span>
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                  </div>
+                  <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+              </div>
+          </div>
+
+          <br> <br>
+
+          <!-- Separators -->
+          <div class="separators">
+
+            <div class="separators-item">
+              <img src="images/vector-maskedman.png" alt="Hygiene">
+              <p class="separator-main-text">
+                Hygiene Saves Lives
+                </p>
+                <p class ="separator-sub-text">
+                Wearing masks is a simple yet effective measure to protect yourself and others from respiratory droplets that may contain viruses
+              </p>
+            </div>
+
+            <div class="separators-item">
+              <img src="images/vector-shipping.png" alt="Fast Delivery">
+              <p class="separator-main-text">
+                Fast and Efficient Delivery
+                </p>
+                <p class ="separator-sub-text">
+                  We prioritize both speed and precision to ensure your items are delivered intact and on time.
+              </p>
+            </div>
+
+            <div class="separators-item">
+              <img src="images/vector-bag.png" alt="Secure packaging">
+              <p class="separator-main-text">
+                Sealed and Secure Packaging
+                </p>
+                <p class ="separator-sub-text">
+                  Our sealed and secure packaging protects against external elements, preserving the natural flavors and textures of your purchases.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Meats Section -->
+          <p class="textproduct">Meats</p> 
+          <div class="grid-container">
+            <div class="containergrid">
+              <div class="discount-percentagefirst">-10%</div>
+                <div class="product-card">
+                  <img src="images/veal.jpeg" alt="Veal" class="product-image">
+                  <div class="product-title">Veal</div>
+                  <div class="perweight">500 g</div>
+                    <div class="price-before" data-unit-price="30.00">
+                      RM30.00
+                    </div>
+                  <div class="price-after" data-unit-price="27.00">
+                    RM27.00
+                  </div>
+                  
+                  <div class="quantity-controls">
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                  <span class="quantity">1</span>
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                  </div>
+                  <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="containergrid">
+              <div class="discount-percentagefirst">-15%</div>
+              <div class="product-card">
+                <img src="images/wholechicken.png" alt="Whole Chicken" class="product-image">
+                <div class="product-title">Whole Chicken</div>
+                <div class="perweight">1 pcs</div>
+                  <div class="price-before" data-unit-price="20.00">
+                    RM20.00
+                  </div>
+                <div class="price-after" data-unit-price="17.00">
+                  RM17.00
+                </div>
+
+                  <div class="quantity-controls">
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                  <span class="quantity">1</span>
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                  </div>
+                  <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+              </div>
+            </div>
+            
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-10%</div>
+                <div class="product-card">
+                  <img src="images/wholeduck.png" alt="Whole Duck" class="product-image">
+                  <div class="product-title">Whole Duck</div>
+                  <div class="perweight">1 pcs</div>
+                    <div class="price-before" data-unit-price="20.00">
+                      RM20.00
+                    </div>
+                  <div class="price-after" data-unit-price="18.00">
+                    RM18.00
+                  </div>
+
+                    <div class="quantity-controls">
+                    <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                    <span class="quantity">1</span>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                    <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-10%</div>
+                <div class="product-card">
+                  <img src="images/wholeturkey.png" alt="Whole Turkey" class="product-image">
+                  <div class="product-title">Whole Turkey</div>
+                  <div class="perweight">1 pcs</div>
+                    <div class="price-before" data-unit-price="100.00">
+                      RM100.00
+                    </div>
+                  <div class="price-after" data-unit-price="90.00">
+                    RM90.00
+                  </div>
+
+                    <div class="quantity-controls">
+                    <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                    <span class="quantity">1</span>
+                    <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                    <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-5%</div>
+                <div class="product-card">
+                  <img src="images/beeftenderloin.png" alt="Beef Tenderloin" class="product-image">
+                  <div class="product-title">Beef Tenderloin</div>
+                  <div class="perweight">250 g</div>
+                    <div class="price-before" data-unit-price="15.00">
+                      RM15.00
+                    </div>
+                  <div class="price-after" data-unit-price="14.25">
+                    RM14.25
+                  </div>
+
+                  <div class="quantity-controls">
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                  <span class="quantity">1</span>
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                  </div>
+                  <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-15%</div>
+                <div class="product-card">
+                  <img src="images/sirloin-steak.png" alt="Sirloin Steak" class="product-image">
+                  <div class="product-title">Sirloin Steak</div>
+                  <div class="perweight">1 kg</div>
+                    <div class="price-before" data-unit-price="34.00">
+                      RM34.00
+                    </div>
+                  <div class="price-after" data-unit-price="28.90">
+                    RM28.90
+                  </div>
+
+                  <div class="quantity-controls">
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                  <span class="quantity">1</span>
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                  </div>
+                  <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-5%</div>
+                <div class="product-card">
+                  <img src="images/fishfillet.jpg" alt="Fish Fillet" class="product-image">
+                  <div class="product-title">Fish Fillet</div>
+                  <div class="perweight">1 pcs</div>
+                    <div class="price-before" data-unit-price="8.00">
+                      RM8.00
+                    </div>
+                  <div class="price-after" data-unit-price="7.60">
+                    RM7.60
+                  </div>
+
+                  <div class="quantity-controls">
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                  <span class="quantity">1</span>
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                  </div>
+                  <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-10%</div>
+                <div class="product-card">
+                  <img src="images/prawn.png" alt="Prawn" class="product-image">
+                  <div class="product-title">Prawn</div>
+                  <div class="perweight">1 kg</div>
+                    <div class="price-before" data-unit-price="26.00">
+                      RM26.00
+                    </div>
+                  <div class="price-after" data-unit-price="23.40">
+                    RM23.40
+                  </div>
+
+                  <div class="quantity-controls">
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                  <span class="quantity">1</span>
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                  </div>
+                  <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Separator -->
+              <div class="separators2">
+                <div class="separators-item2">
+                  <img src="images/cherries.jpg" alt="Cherries">
+                </div>
+                <div class="separators-item2">
+                  <img src="images/berries.jpg" alt="Berries">
+                </div>
+              </div>
+          
+            <!-- Vegetables section -->
+            <p class="textproduct">Vegetables</p> 
+              <div class="grid-container">
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-10%</div>
+                <div class="product-card">
+                  <img src="images/mustardgreen.png" alt="Mustard Green" class="product-image">
+                  <div class="product-title">Mustard Green</div>
+                  <div class="perweight">1 kg</div>
+                    <div class="price-before" data-unit-price="8.00">
+                      RM8.00
+                    </div>
+                  <div class="price-after" data-unit-price="7.20">
+                    RM7.20
+                  </div>
+
+                  <div class="quantity-controls">
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                  <span class="quantity">1</span>
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                  </div>
+                  <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-5%</div>
+                <div class="product-card">
+                  <img src="images/lettuce.jpg" alt="Lettuce" class="product-image">
+                  <div class="product-title">Lettuce</div>
+                  <div class="perweight">1 kg</div>
+                    <div class="price-before" data-unit-price="6.00">
+                      RM6.00
+                    </div>
+                  <div class="price-after" data-unit-price="5.70">
+                    RM5.70
+                  </div>
+
+                  <div class="quantity-controls">
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                  <span class="quantity">1</span>
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                  </div>
+                  <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-20%</div>
+                <div class="product-card">
+                  <img src="images/cucumber.png" alt="Cucumber" class="product-image">
+                  <div class="product-title">Cucumber</div>
+                  <div class="perweight">1 kg</div>
+                    <div class="price-before" data-unit-price="7.50">
+                      RM7.50
+                    </div>
+                  <div class="price-after" data-unit-price="6.00">
+                    RM6.00
+                  </div>
+
+                  <div class="quantity-controls">
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                  <span class="quantity">1</span>
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                  </div>
+                  <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-10%</div>
+                <div class="product-card">
+                  <img src="images/kangkung.png" alt="Water Spinach" class="product-image">
+                  <div class="product-title">Water Spinach</div>
+                  <div class="perweight">1 kg</div>
+                    <div class="price-before" data-unit-price="10.80">
+                      RM10.80
+                    </div>
+                  <div class="price-after" data-unit-price="9.72">
+                    RM9.72
+                  </div>
+
+                  <div class="quantity-controls">
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                  <span class="quantity">1</span>
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                  </div>
+                  <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-5%</div>
+                <div class="product-card">
+                  <img src="images/eggplant.png" alt="Eggplant" class="product-image">
+                  <div class="product-title">Eggplant</div>
+                  <div class="perweight">1 pcs</div>
+                    <div class="price-before" data-unit-price="11.00">
+                      RM11.00
+                    </div>
+                  <div class="price-after" data-unit-price="10.45">
+                    RM10.45
+                  </div>
+
+                  <div class="quantity-controls">
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                  <span class="quantity">1</span>
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                  </div>
+                  <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+              </div>
+              </div>
+            
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-10%</div>
+                <div class="product-card">
+                  <img src="images/lady-fingers.png" alt="Lady's Finger" class="product-image">
+                  <div class="product-title">Lady's Finger</div>
+                  <div class="perweight">1 kg</div>
+                    <div class="price-before" data-unit-price="16.00">
+                      RM16.00
+                    </div>
+                  <div class="price-after" data-unit-price="14.40">
+                    RM14.40
+                  </div>
+
+                  <div class="quantity-controls">
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                  <span class="quantity">1</span>
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                  </div>
+                  <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-5%</div>
+                <div class="product-card">
+                  <img src="images/Tomatoes.webp" alt="Tomato" class="product-image">
+                  <div class="product-title">Tomato</div>
+                  <div class="perweight">1 kg</div>
+                    <div class="price-before" data-unit-price="6.00">
+                      RM6.00
+                    </div>
+                  <div class="price-after" data-unit-price="5.70">
+                    RM5.70
+                  </div>
+
+                  <div class="quantity-controls">
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                  <span class="quantity">1</span>
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                  </div>
+                  <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+              </div>
+
+              <div class="containergrid">
+                <div class="discount-percentagefirst">-15%</div>
+                <div class="product-card">
+                  <img src="images/cabbage.jpg" alt="Cabbage" class="product-image">
+                  <div class="product-title">Cabbage</div>
+                  <div class="perweight">1 kg</div>
+                    <div class="price-before" data-unit-price="3.00">
+                      RM3.00
+                    </div>
+                  <div class="price-after" data-unit-price="2.55">
+                    RM2.55
+                  </div>
+
+                  <div class="quantity-controls">
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                  <span class="quantity">1</span>
+                  <button type="button" class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                  </div>
+                  <button type="button" class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                </div>
+              </div>
+
+
+          </div>
+        
+        </main>
+
+        <!-- Footer -->
+        <footer>
+                      
+          <div class="footer-container">
+            <div class="footer-hotspot"><a href="index.html"><img src="images/freshies-hotspot.png" alt="Freshies logo"></a></div>
+            <div class="introduction">
+              <h2 class="introduce-name">Freshies</h2>
+              <div class="description-container"><p class="brief-desription">We are a online grocery store that covers the whole Malaysia, We were founded in December 2023 and we would try our best to provide the best quality and most affordable price to our fellows Malaysians</p></div> <br>
+            </div>
+            <div class="hyperlinks">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+              <br>
+            </div>
+            <div class="follow-us">
+              <h3>&nbsp;&nbsp;Follow us!</h3>
+              <ul>   
+                <li><a href="https://www.facebook.com/"><img src="icons/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="icons/instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://twitter.com/?lang=en"><img src="icons/twitter.png" alt="Twitter"></a></li>
+                <li><a href="https://www.youtube.com/"><img src="icons/youtube.png" alt="Youtube"></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Copyright & Email -->
+          <div class="copyright">
+            Copyright &copy; 2023 Freshies <br>
+            <a href="mailto:freshies7@gmail.com">freshies7@gmail.com</a>
+          </div>
+
+        </footer>
+
+        </div>
+        
+</body>
+
+</html>

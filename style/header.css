@@ -1,0 +1,231 @@
+/* Header */
+.banner-container {
+
+    display: flex;
+    flex-direction: row;
+
+    height: 90px;
+    width: 100%;
+    margin: auto;
+    
+    align-items: center;
+    /* background-color: #C9DD94; */
+    background-image: url('/images/darkbrown.jpg');
+
+}
+
+/* Freshies logo */
+.header-hotspot {
+
+    width: 180px;
+    margin: 10px 0 0 10px;
+    
+}
+
+/* Header Navigation */
+nav a {
+
+    display: inline-block;
+    position: relative;
+
+    margin-right: 13px;
+    padding: 20px 0px;
+
+    color: white;
+    opacity: 0.75;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+
+}
+
+nav a:hover {
+
+    opacity: 1;
+    color: white;
+    text-decoration: none;
+
+}
+
+nav a:active {
+
+    opacity: 0.75   ;
+    color: white;
+    text-decoration: none;
+
+}
+
+nav a::before {
+
+    position: absolute;
+
+    height: 5px;
+    
+    content: "";
+    background-color: white;
+
+    transition: 500ms;
+
+}
+  
+nav a::before {
+
+    width: 0%;
+    bottom: 10px;
+
+}
+  
+nav a:hover::before {
+
+    width: 100%;
+
+}
+  
+
+.navigation-link-container {
+
+    display: flex;
+
+    margin-left: 40px;
+    width: 1050px;
+
+}
+
+/* Header subnavigation */
+.sub-banner-container {
+
+    display: flex;
+    flex-direction: row;
+
+    height: 30px;
+    width: 100%;
+    margin: auto;
+    
+    align-items: center;
+    /* background-color: #acbb85; */
+    white-space: nowrap;
+    background-image: url('/images/lightbrown.png');
+
+}
+
+.left-section {
+
+    margin-left: -35px;
+
+}
+
+.left-section li {
+
+    display: inline-block;
+    margin: 10px 0 0 5px;
+
+}
+
+.left-section a {
+
+    display: inline-block;
+    position: relative;
+
+    color: white;
+    opacity: 0.75;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: opacity 0.15s;
+
+}
+
+.left-section a:hover {
+
+    opacity: 1;
+    color: white;
+    text-decoration: none;
+
+}
+
+.left-section a:focus {
+
+    opacity: 1;
+    color: white;
+    text-decoration: none;
+
+}
+
+.left-section a::before {
+
+    opacity: 1;
+    color: white;
+    text-decoration: none;
+
+}
+
+.right-section {
+
+    display: flex;
+    flex: 1;
+
+    justify-content: right;
+
+}
+
+.right-section img {
+
+    margin-right: 3px;
+    width: 20px;
+
+    filter: brightness(0) invert(1);
+    opacity: 0.6;
+
+}
+
+.right-section img:hover {
+
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+.search-icon {
+
+    width: 10px;
+    height: 18px;
+
+}
+
+.right-section li {
+
+    display: inline-block;
+    position: relative;
+
+    margin: 8px 5px 0 0;
+
+}
+
+/* Highlight for current page */
+.active-page {
+
+    opacity: 1;
+    color: white;
+    text-decoration: none;
+
+}
+
+.active-page::before {
+    transition: 500ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: white;
+}
+  
+.active-page::before {
+    width: 100%;
+    bottom: 10px;
+}
